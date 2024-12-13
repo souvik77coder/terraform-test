@@ -47,3 +47,7 @@ resource "aws_vpc" "vpc" {
     Name = var.inputname
   }
 }
+
+output "vpcid" {
+  value = aws_vpc.vpc.id
+}
